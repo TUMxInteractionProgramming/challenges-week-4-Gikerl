@@ -12,8 +12,8 @@
 /* GLOBAL */
 
 * {
-    font-family: Roboto, 'Arial', sans-serif; /* #4 use #roboto #font*/
-
+    font-family: Roboto, 'Arial', sans-serif;
+    /* #4 use #roboto #font*/
     /* Reset margins and paddings #heartbeat #spacing */
     margin: 0;
     padding: 0;
@@ -23,7 +23,8 @@ body {
     background-color: #F5F5F5;
 }
 
-button, strong {
+button,
+strong {
     text-transform: uppercase;
 }
 
@@ -35,7 +36,8 @@ button, strong {
     height: 100%;
     width: 40%;
 
-    background-color: #3F51B5; /* temporary background color to see the effect, is completely hidden now */
+    background-color: #3F51B5;
+    /* temporary background color to see the effect, is completely hidden now */
 }
 
 #chat {
@@ -71,7 +73,8 @@ h1 {
     padding: 24px 16px 20px 16px;
 
     /* #5 MOOCUS image alignment */
-    position: relative; /* we need this, so that the image's absolute position is relative to the app bar */
+    position: relative;
+    /* we need this, so that the image's absolute position is relative to the app bar */
 }
 
 h1#left-app-bar {
@@ -93,8 +96,11 @@ h1 a {
 
 h1 #channel-star {
     /* #6 #liking #filled  */
-    position:absolute;
+    display: inline-block;
+    position: absolute;
     right: 16px;
+    color: black;
+    font-size: 24px;
 }
 
 /* CHANNELS LIST */
@@ -106,9 +112,12 @@ ul {
     /* #5 position #channels list and let it #scroll */
     position: absolute;
     width: 100%;
-    top: 64px; /* the app bar's height */
-    bottom: 72px; /* the tab bar's height */
-    overflow-y: auto; /* this adds scroll bars on demand */
+    top: 64px;
+    /* the app bar's height */
+    bottom: 72px;
+    /* the tab bar's height */
+    overflow-y: auto;
+    /* this adds scroll bars on demand */
 }
 
 li {
@@ -133,7 +142,8 @@ li img {
     vertical-align: middle;
 }
 
-li.selected {
+
+.selected {
     color: #3F51B5;
     border-left: 4px solid #3F51B5;
 }
@@ -141,7 +151,9 @@ li.selected {
 /* TAB BAR */
 
 /* #5 #smileys #lazy: we can reuse most of the tab-bar's styles for the chat-bar */
-#tab-bar, #chat-bar {
+
+#tab-bar,
+#chat-bar {
     background-color: white;
     text-align: center;
 
@@ -155,7 +167,9 @@ li.selected {
 }
 
 /* #5 #smileys #lazy: we can reuse most of the tab-bar buttons' styles for the chat-bar buttons */
-#tab-bar button, #chat-bar button {
+
+#tab-bar button,
+#chat-bar button {
     background-color: white;
     border: none;
     font-size: 13px;
@@ -172,7 +186,7 @@ li.selected {
     border-bottom: 4px solid #3F51B5;
 }
 
-#tab-bar button img {
+#tab-bar button i {
     display: block;
     margin: 0 auto 4px auto;
 }
@@ -188,7 +202,7 @@ li.selected {
 #emojis {
     /* #5 #smileys #emojis menu */
     /* colors and borders */
-    background-color:white;
+    background-color: white;
     border: 1px solid black;
 
     /* size & alignment */
