@@ -86,7 +86,3 @@ function createChannelElement(channelObject) {
     
     return appendString
 }
-
-$(document).ready(function () {
-    listChannels();
-});
